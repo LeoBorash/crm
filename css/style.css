@@ -1,0 +1,118 @@
+td,
+th {
+  border-right: 2px solid #e0e4e8;
+}
+.main-div{
+  width: 1460px;
+}
+.main-status{
+  width: 260px;
+}
+.statusi{
+  text-align: center;
+  width: 100%;
+  background-color: #17A2B8;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.double{
+  text-align: center;
+  width: 100%;
+  background-color: darkorange;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.statusi:hover{
+  background-color: #348794;
+}
+.vrucheno{
+  text-align: center;
+  width: 100%;
+  background-color: #28a745;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+.vrucheno>a,span{
+  color: white;
+}
+.otkaz{
+  text-align: center;
+  width: 100%;
+  background-color:#dc3545;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+.otkaz>a,span{
+  color: white;
+}
+.statusi>a,span{
+  color: white;
+}
+td,th,p,span,a{
+  color: black;
+}
+input,
+textarea {
+  margin-bottom: 5px;
+}
+.top-div {
+  margin: 10px 10px 10px 20px;
+}
+.top-div > a {
+  padding: 6px 15px;
+  border-radius: 6px;
+  background-color: coral;
+  font-size: 15px;
+  color: black;
+  float: left;
+  margin-top: 3px;
+}
+.forma > input {
+  border-radius: 15px;
+  padding-top: 1px;
+  padding-bottom: 6px;
+  margin-top: 1px;
+}
+.forma > input:first-child{
+  margin-left: 30px;
+  padding-left: 10px;
+  width: 20%;
+}
+.forma > button {
+  border-radius: 5px;
+  padding-top: 1px;
+  padding-bottom: 6px;
+  background-color: coral;
+  margin-left: 5px;
+  width: 7%;
+}
+.dates{
+  padding: 0 10px;
+	width: 9%;
+}
+.block {
+  height: 495px;
+  border: 1px ;
+  border-radius: 2px;
+  margin-top: 85px;
+  margin-bottom: 7px;
+  overflow-y: auto ;
+}
+
+
+@media screen and (max-width: 330px) {
+    .mobile-header{
+      margin-top: 55px;
+    }
+}
+
+.divkago{
+  max-height: 220px;
+  overflow: scroll;
+}
