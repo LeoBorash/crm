@@ -38,15 +38,7 @@ while ($row = mysqli_fetch_assoc($query)) :
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <?php
-                    if(isset($_SESSION['search'])){
-                        unset($_SESSION['search']);
-                        echo '<a href="logist.php" class="btn btn-light mt-2 mb-3">Назад</a>';
-                    }else{
-                        echo '<a href="#" onclick="history.go(-1); return false;" class="btn btn-light mt-2 mb-3">Назад</a>';
-                    }
-                ?>
-
+               <a href="#" onclick="history.go(-2); return false;" class="btn btn-light mt-2 mb-3">Назад</a>
                 <form action="" method="POST">
                     <span>Имя:</span> <input type="text" class="form-control" name="client_name"
                                              value="<?= $row['client_name'] ?> ">
