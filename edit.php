@@ -41,7 +41,7 @@ while ($row = mysqli_fetch_assoc($query)) :
                 <?php
                     if(isset($_SESSION['search'])){
                         unset($_SESSION['search']);
-                        echo '<a href="logist.php" class="btn btn-light mt-2 mb-3">Назад</a>';
+                        echo '<a href="logist.php" class="btn btn-light mt-2 mb-3">Назад!</a>';
                     }else{
                         echo '<a href="#" onclick="history.go(-1); return false;" class="btn btn-light mt-2 mb-3">Назад</a>';
                     }
