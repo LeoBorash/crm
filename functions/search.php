@@ -85,6 +85,7 @@ function Searchozhidaet()
 
 function Searchpodtver()
 {
+    $_SESSION['search'] = 1;
     global $conn;
     $query = $conn->query("
     SELECT * FROM clients 
@@ -112,6 +113,7 @@ function Searchpodtver()
 
 function SearchozhidDostavki()
 {
+    $_SESSION['search'] = 1;
     global $conn;
     $query = $conn->query("
     SELECT * FROM clients 
@@ -139,6 +141,7 @@ function SearchozhidDostavki()
 
 function Searchalmaty()
 {
+    $_SESSION['search'] = 1;
     global $conn;
     $query = $conn->query("
     SELECT * FROM clients 
@@ -193,6 +196,7 @@ function Searchzaberut()
 
 function Searchvputi()
 {
+    $_SESSION['search'] = 1;
     global $conn;
     $query = $conn->query("
     SELECT * FROM clients 
@@ -220,6 +224,7 @@ function Searchvputi()
 
 function Searchpostupil()
 {
+    $_SESSION['search'] = 1;
     global $conn;
     $query = $conn->query("
     SELECT * FROM clients 
@@ -247,6 +252,7 @@ function Searchpostupil()
 
 function Searchvrucheno()
 {
+    $_SESSION['search'] = 1;
     global $conn;
     $query = $conn->query("
     SELECT * FROM clients 
@@ -274,6 +280,7 @@ function Searchvrucheno()
 
 function SearchvruchenoAlmaty()
 {
+    $_SESSION['search'] = 1;
     global $conn;
     $query = $conn->query("
     SELECT * FROM clients 
@@ -301,6 +308,7 @@ function SearchvruchenoAlmaty()
 
 function Searchotkaz()
 {
+    $_SESSION['search'] = 1;
     global $conn;
     $query = $conn->query("
     SELECT * FROM clients 
