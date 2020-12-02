@@ -10,10 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f4e2695-b5c2-4fdd-bdbe-79d7c4825c2c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/db.php" afterDir="false" />
-    </list>
+    <list default="true" id="6f4e2695-b5c2-4fdd-bdbe-79d7c4825c2c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +67,7 @@
       <workItem from="1606472248733" duration="5143000" />
       <workItem from="1606548284754" duration="139000" />
       <workItem from="1606886311254" duration="4994000" />
-      <workItem from="1606893907301" duration="1694000" />
+      <workItem from="1606893907301" duration="2030000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1606388260275</created>
@@ -107,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606892555247</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Поиск Назад">
+      <created>1606897051852</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606897051852</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
