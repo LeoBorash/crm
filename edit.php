@@ -53,6 +53,9 @@ while ($row = mysqli_fetch_assoc($query)) :
                             <!-- Pandora -->
                         <?php } elseif ($row['client_product'] == 'AirDots') { ?>
                             <option value="AirDots">AirDots</option>
+                            <!-- Sky Watch -->
+                        <?php } elseif ($row['client_product'] == 'Sky+Port+Fit') { ?>
+                            <option value="Sky+Port+Fit">Sky+Port+Fit</option>
                             <!-- V8 Gifts -->
                         <?php } elseif ($row['client_product'] == 'V8-Gifts') { ?>
                             <option value="V8-Gifts">V8-Gifts</option>
