@@ -407,7 +407,7 @@ function otkaz()
 {
     global $conn;
     if ($_SESSION['user_login'] == 'asiok') {
-        $query = $conn->query("SELECT * FROM clients WHERE client_status = '7.Отказ' and client_status = '8.Отказ')");
+        $query = $conn->query("SELECT * FROM clients WHERE client_status = '8.Отказ')");
         while ($row = mysqli_fetch_assoc($query)) { ?>
             <?php if ($row['client_confirm'] == 'Асылжан') { ?>
 
@@ -419,7 +419,7 @@ function otkaz()
             <?php }
         }
     } elseif ($_SESSION['user_login'] == 'Baga') {
-        $query = $conn->query("SELECT * FROM clients WHERE client_status = '7.Отказ'");
+        $query = $conn->query("SELECT * FROM clients WHERE client_status = '8.Отказ'");
         while ($row = mysqli_fetch_assoc($query)) { ?>
             <?php if ($row['client_confirm'] == 'Бағлан') { ?>
 
@@ -432,7 +432,7 @@ function otkaz()
         }
     }
     else{
-        $query = $conn->query("SELECT * FROM clients WHERE client_status = '7.Отказ'");
+        $query = $conn->query("SELECT * FROM clients WHERE client_status = '8.Отказ' and '7.Отказ'");
         while ($row = mysqli_fetch_assoc($query)) { ?>
 
             <div class="text-primary mb-2 statusi">

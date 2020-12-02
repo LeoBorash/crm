@@ -26,7 +26,7 @@ function logist_sts_count()
             $row = mysqli_fetch_assoc($query); ?>
             <th class="text-center main-status">Поступил (<?= $row['total9'] ?>)</th>
             <?php
-            $query = $conn->query("SELECT count(client_price) as total11 FROM clients WHERE client_status = '7.Отказ' AND client_confirm = 'Бағлан'");
+            $query = $conn->query("SELECT count(client_price) as total11 FROM clients WHERE client_status in('7.Отказ','8.Отказ') AND client_confirm = 'Бағлан'");
             $row = mysqli_fetch_assoc($query); ?>
             <th class="text-center main-status">Отказ (<?= $row['total11'] ?>)</th>
 
@@ -53,7 +53,7 @@ function logist_sts_count()
             $row = mysqli_fetch_assoc($query); ?>
             <th class="text-center main-status">Поступил (<?= $row['total9'] ?>)</th>
             <?php
-            $query = $conn->query("SELECT count(client_price) as total11 FROM clients WHERE client_status = '7.Отказ' AND client_confirm = 'Асылжан'");
+            $query = $conn->query("SELECT count(client_price) as total11 FROM clients WHERE client_status in('7.Отказ','8.Отказ') AND client_confirm = 'Асылжан'");
             $row = mysqli_fetch_assoc($query); ?>
             <th class="text-center main-status">Отказ (<?= $row['total11'] ?>)</th>
         <?php }else{
@@ -77,7 +77,7 @@ function logist_sts_count()
             $row = mysqli_fetch_assoc($query); ?>
             <th class="text-center main-status">Поступил (<?= $row['total9'] ?>)</th>
             <?php
-            $query = $conn->query("SELECT count(client_price) as total11 FROM clients WHERE client_status = '7.Отказ'");
+            $query = $conn->query("SELECT count(client_price) as total11 FROM clients WHERE client_status in('7.Отказ','8.Отказ')");
             $row = mysqli_fetch_assoc($query); ?>
             <th class="text-center main-status">Отказ (<?= $row['total11'] ?>)</th>
       <?php  }

@@ -323,7 +323,7 @@ function Searchotkaz()
     ORDER BY client_date DESC");
     while ($row = mysqli_fetch_assoc($query)) { ?>
         <?php
-        if($row['client_status'] == '7.Отказ') { ?>
+        if($row['client_status'] == '7.Отказ' or '8.Отказ') { ?>
             <div class="text-primary mb-2 statusi">
                 <a href="edit.php?id=<?= $row['client_id'] ?>"><?= mb_substr($row['client_name'], 0, 23) ?></a> <br>
                 <span><?= $row['client_phone'] ?></span><br>
