@@ -407,7 +407,7 @@ function otkaz()
 {
     global $conn;
     if ($_SESSION['user_login'] == 'asiok') {
-        $query = $conn->query("SELECT * FROM clients WHERE client_status = '7.Отказ'");
+        $query = $conn->query("SELECT * FROM clients WHERE client_status in ('7.Отказ', '8.Отказ')");
         while ($row = mysqli_fetch_assoc($query)) { ?>
             <?php if ($row['client_confirm'] == 'Асылжан') { ?>
 
