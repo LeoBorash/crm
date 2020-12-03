@@ -18,9 +18,6 @@ include "includes/db.php";
     <div class="col-md-6">
         <a href="/" class="btn btn-info mt-2 mb-3 ml-3">Назад</a>
         <div class="row">
-            <?php
-            $query = $conn->query("SELECT * FROM users WHERE id = $_SESSION[user_name]")
-            ?>
 
             <div class="col-9 ml-3 mt-3">
                 <h3><?= $_SESSION['user_name'] ?></h3>
@@ -46,11 +43,11 @@ include "includes/db.php";
                     $_SESSION['d'] = $row['total4'];
                     $a = $_SESSION['a'] + $_SESSION['b'] + $_SESSION['c'] + $_SESSION['d'];
                     ?>
-                <p>Подтвержден: <span><?= $a ?></span>тг</p>
+                <p>Подтвержден: <span><?= $a - 300000 ?></span>тг</p>
                 <p><?php
                     $query = $conn->query("SELECT SUM(client_price) as total FROM clients WHERE client_status = '6.Вручено' and client_confirm = '$_SESSION[user_name]'");
                     $row = mysqli_fetch_assoc($query); ?>
-                <p>Вручено: <?= $row['total'] ?>тг</p></p>
+                <p>Вручено: <?= $row['total']  - 1339940 ?>тг</p></p>
 
                 <p><?php
                     $query = $conn->query("SELECT SUM(client_price) as total FROM clients WHERE client_status = '7.Отказ' and client_confirm = '$_SESSION[user_name]'");

@@ -1,5 +1,6 @@
 <?php
-function balance(){
+function balance()
+{
     global $conn;
     $query = $conn->query("SELECT SUM(client_price) as total1 FROM clients WHERE client_status = '2.Подтвержден' and client_confirm = '$_SESSION[user_name]'");
     $row = mysqli_fetch_assoc($query);
@@ -29,15 +30,14 @@ function balance(){
     $row = mysqli_fetch_assoc($query);
     $_SESSION['g'] = $row['total'];
 
-    $a = $_SESSION['a'] + $_SESSION['b'] + $_SESSION['c'] + $_SESSION['d'];
-
+    $a = $_SESSION['a'] + $_SESSION['b'] + $_SESSION['c'] + $_SESSION['d'] ;
 
 
     echo '
     <span style="color: white";>
-        <i style="color:gold" class="fas fa-coins"></i>  : ' . (int)($a * (8 / 100)).'тг' . ' 
-        <i style="color:lightblue" class="ml-1 fas fa-money-check-alt"></i> : ' . (int)(($_SESSION['f'] + $_SESSION['g']) * (8 / 100)).'тг'. '
-        <i style="color:orangered" class="ml-2 fas fa-times"></i> : '. $_SESSION['e'] * (8 / 100).'тг'. '
+        <i style="color:gold" class="fas fa-coins"></i>  : ' . (int)($a * (8 / 100)) . 'тг' . ' 
+        <i style="color:lightblue" class="ml-1 fas fa-money-check-alt"></i> : ' . (int)(($_SESSION['f'] + $_SESSION['g'] - 1154060) * (8 / 100)) . 'тг' . '
+        <i style="color:orangered" class="ml-2 fas fa-times"></i> : ' . $_SESSION['e'] * (8 / 100) . 'тг' . '
      </span>
        ';
 }
