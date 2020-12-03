@@ -59,10 +59,10 @@ function ozhidaet()
                 </div>
             <?php }
         }
-    } elseif ($_SESSION['user_login'] == 'Baga') {
+    } elseif ($_SESSION['user_login'] == 'Bagan') {
         $query = $conn->query("SELECT * FROM clients WHERE client_status = '4.Ожидает'");
         while ($row = mysqli_fetch_assoc($query)) { ?>
-            <?php if ($row['client_confirm'] == 'Baglan') { ?>
+            <?php if ($row['client_confirm'] == 'Бағлан') { ?>
 
                 <div class="text-primary mb-2 statusi">
                     <span><?= substr($row['client_date'], 5,-3) ?> </span><br>
@@ -118,10 +118,10 @@ function podtver()
                 </div>
             <?php }
         }
-    } elseif ($_SESSION['user_login'] == 'Baga') {
+    } elseif ($_SESSION['user_login'] == 'Bagan') {
         $query = $conn->query("SELECT * FROM clients WHERE client_status = '2.Подтвержден'");
         while ($row = mysqli_fetch_assoc($query)) { ?>
-            <?php if ($row['client_confirm'] == 'Baglan') { ?>
+            <?php if ($row['client_confirm'] == 'Бағлан') { ?>
 
                 <div class="text-primary mb-2 statusi">
                     <span><?= substr($row['client_date'], 5,-3) ?> </span><br>
@@ -163,10 +163,10 @@ function ozhidDostavki()
                 </div>
             <?php }
         }
-    } elseif ($_SESSION['user_login'] == 'Baga') {
+    } elseif ($_SESSION['user_login'] == 'Bagan') {
         $query = $conn->query("SELECT * FROM clients WHERE client_status = '4,1.Ожидает доставки'");
         while ($row = mysqli_fetch_assoc($query)) { ?>
-            <?php if ($row['client_confirm'] == 'Baglan') { ?>
+            <?php if ($row['client_confirm'] == 'Бағлан') { ?>
 
                 <div class="text-primary mb-2 statusi">
                     <span><?= substr($row['client_date'], 5,-3) ?> </span><br>
@@ -207,10 +207,10 @@ function almaty()
                 </div>
             <?php }
         }
-    } elseif ($_SESSION['user_login'] == 'Baga') {
+    } elseif ($_SESSION['user_login'] == 'Bagan') {
         $query = $conn->query("SELECT * FROM clients WHERE client_status = '2,1.Алматы'");
         while ($row = mysqli_fetch_assoc($query)) { ?>
-            <?php if ($row['client_confirm'] == 'Baglan') { ?>
+            <?php if ($row['client_confirm'] == 'Бағлан') { ?>
 
                 <div class="text-primary mb-2 statusi">
                     <span><?= substr($row['client_date'], 5,-3) ?> </span><br>
@@ -251,10 +251,10 @@ function vputi()
                 </div>
             <?php }
         }
-    } elseif ($_SESSION['user_login'] == 'Baga') {
+    } elseif ($_SESSION['user_login'] == 'Bagan') {
         $query = $conn->query("SELECT * FROM clients WHERE client_status = '5.В Пути'");
         while ($row = mysqli_fetch_assoc($query)) { ?>
-            <?php if ($row['client_confirm'] == 'Baglan') { ?>
+            <?php if ($row['client_confirm'] == 'Бағлан') { ?>
 
                 <div class="text-primary mb-2 statusi">
                     <span><?= substr($row['client_date'], 5,-3) ?> </span><br>
@@ -292,10 +292,10 @@ function postupil()
                 </div>
             <?php }
         }
-    } elseif ($_SESSION['user_login'] == 'Baga') {
+    } elseif ($_SESSION['user_login'] == 'Bagan') {
         $query = $conn->query("SELECT * FROM clients WHERE client_status = '4,3.Поступил'");
         while ($row = mysqli_fetch_assoc($query)) { ?>
-            <?php if ($row['client_confirm'] == 'Baglan') { ?>
+            <?php if ($row['client_confirm'] == 'Бағлан') { ?>
 
                 <div class="text-primary mb-2 statusi">
                     <span><?= substr($row['client_date'], 5,-3) ?> </span><br>
@@ -333,10 +333,10 @@ function vrucheno()
                 </div>
             <?php }
         }
-    } elseif ($_SESSION['user_login'] == 'Baga') {
+    } elseif ($_SESSION['user_login'] == 'Bagan') {
         $query = $conn->query("SELECT * FROM clients WHERE client_status = '6.Вручено'");
         while ($row = mysqli_fetch_assoc($query)) { ?>
-            <?php if ($row['client_confirm'] == 'Baglan') { ?>
+            <?php if ($row['client_confirm'] == 'Бағлан') { ?>
 
                 <div class="text-primary mb-2 statusi">
                     <a href="edit.php?id=<?= $row['client_id'] ?>"><?= mb_substr($row['client_name'], 0, 23) ?></a> <br>
@@ -375,10 +375,10 @@ function vruchenoAlmaty()
                 </div>
             <?php }
         }
-    } elseif ($_SESSION['user_login'] == 'Baga') {
+    } elseif ($_SESSION['user_login'] == 'Bagan') {
         $query = $conn->query("SELECT * FROM clients WHERE client_status = '2,2.Вручено АЛ'");
         while ($row = mysqli_fetch_assoc($query)) { ?>
-            <?php if ($row['client_confirm'] == 'Baglan') { ?>
+            <?php if ($row['client_confirm'] == 'Бағлан') { ?>
 
                 <div class="text-primary mb-2 statusi">
                     <a href="edit.php?id=<?= $row['client_id'] ?>"><?= mb_substr($row['client_name'], 0, 23) ?></a> <br>
@@ -418,10 +418,10 @@ function otkaz()
                 </div>
             <?php }
         }
-    } elseif ($_SESSION['user_login'] == 'Baga') {
+    } elseif ($_SESSION['user_login'] == 'Bagan') {
         $query = $conn->query("SELECT * FROM clients WHERE client_status = '8.Отказ'");
         while ($row = mysqli_fetch_assoc($query)) { ?>
-            <?php if ($row['client_confirm'] == 'Baglan') { ?>
+            <?php if ($row['client_confirm'] == 'Бағлан') { ?>
 
                 <div class="text-primary mb-2 otkaz">
                     <a href="edit.php?id=<?= $row['client_id'] ?>"><?= mb_substr($row['client_name'], 0, 23) ?></a> <br>
