@@ -217,76 +217,77 @@ while ($row = mysqli_fetch_assoc($query)) :
                     </select>
                     <span> Принял:</span>
                     <select name="client_confirm" class="m-1 form-control">
-                        <?php
-                        //                        Менеджеры
-                        if ($row['client_confirm'] == '') { ?>
-                            <option value=""></option>
-                            <option value="Акбота">Акбота</option>
-                            <option value="Асылжан">Асылжан</option>
-                            <option value="Бағлан">Бағлан</option>
-                        <?php }
-
-                        //                        Если Подтвержден Асылжан
-                        elseif($row['client_confirm'] == 'Асылжан' && $row['client_status'] == '2.Подтвержден') { ?>
-                            <option value="Асылжан">Асылжан</option>
-                        <?php }
-                        elseif($row['client_confirm'] == 'Асылжан' && $row['client_status'] == '4,1.Ожидает доставки') { ?>
-                            <option value="Асылжан">Асылжан</option>
-                        <?php }
-
-                        //                        Если Подтвержден Акбота
-                        elseif($row['client_confirm'] == 'Акбота' && $row['client_status'] == '2.Подтвержден') { ?>
-                            <option value="Акбота">Акбота</option>
-                        <?php }
-                        elseif($row['client_confirm'] == 'Акбота' && $row['client_status'] == '4,1.Ожидает доставки') { ?>
-                            <option value="Акбота">Акбота</option>
-                        <?php }
-
-                        //                        Если Подтвержден Бағлан
-                        elseif($row['client_confirm'] == 'Бағлан' && $row['client_status'] == '2.Подтвержден') { ?>
-                            <option value="Бағлан">Бағлан</option>
-                        <?php }
-                        elseif($row['client_confirm'] == 'Бағлан' && $row['client_status'] == '4,1.Ожидает доставки') { ?>
-                            <option value="Бағлан">Бағлан</option>
-                        <?php }
-
-//                        Если Отказ Асылжан
-                        elseif($row['client_confirm'] == 'Асылжан' && $row['client_status'] == '7.Отказ') { ?>
-                            <option value="Асылжан">Асылжан</option>
-                        <?php }
-//                        Если Отказ Акбота
-                        elseif($row['client_confirm'] == 'Акбота' && $row['client_status'] == '7.Отказ') { ?>
-                            <option value="Акбота">Акбота</option>
-                        <?php }
-//                        Если Отказ Бағлан
-                        elseif($row['client_confirm'] == 'Бағлан' && $row['client_status'] == '7.Отказ') { ?>
-                            <option value="Бағлан">Бағлан</option>
-                        <?php }
-
-//                        1.В Оброботке
-                        elseif($row['client_confirm'] == 'Асылжан') { ?>
-                            <option value="Асылжан">Асылжан</option>
-                            <option value="Акбота">Акбота</option>
-                            <option value="Бағлан">Бағлан</option>
-                        <?php }
-                        elseif($row['client_confirm'] == 'Бағлан') { ?>
-                            <option value="Бағлан">Бағлан</option>
-                            <option value="Акбота">Акбота</option>
-                            <option value="Асылжан">Асылжан</option>
-                        <?php }
-                        elseif($row['client_confirm'] == 'Акбота') { ?>
-                            <option value="Акбота">Акбота</option>
-                            <option value="Бағлан">Бағлан</option>
-                            <option value="Асылжан">Асылжан</option>
-                        <?php }
-
-                        else { ?>
-                            <option value=""></option>
-                            <option value="Бағлан">Бағлан</option>
-                            <option value="Акбота">Акбота</option>
-                            <option value="Асылжан">Асылжан</option>
-                        <?php }
-                        ?>
+                        <option value="Асылжан">Асылжан</option>
+<!--                        --><?php
+//                        //                        Менеджеры
+//                        if ($row['client_confirm'] == '') { ?>
+<!--                            <option value=""></option>-->
+<!--                            <option value="Акбота">Акбота</option>-->
+<!--                            <option value="Асылжан">Асылжан</option>-->
+<!--                            <option value="Бағлан">Бағлан</option>-->
+<!--                        --><?php //}
+//
+//                        //                        Если Подтвержден Асылжан
+//                        elseif($row['client_confirm'] == 'Асылжан' && $row['client_status'] == '2.Подтвержден') { ?>
+<!--                            <option value="Асылжан">Асылжан</option>-->
+<!--                        --><?php //}
+//                        elseif($row['client_confirm'] == 'Асылжан' && $row['client_status'] == '4,1.Ожидает доставки') { ?>
+<!--                            <option value="Асылжан">Асылжан</option>-->
+<!--                        --><?php //}
+//
+//                        //                        Если Подтвержден Акбота
+//                        elseif($row['client_confirm'] == 'Акбота' && $row['client_status'] == '2.Подтвержден') { ?>
+<!--                            <option value="Акбота">Акбота</option>-->
+<!--                        --><?php //}
+//                        elseif($row['client_confirm'] == 'Акбота' && $row['client_status'] == '4,1.Ожидает доставки') { ?>
+<!--                            <option value="Акбота">Акбота</option>-->
+<!--                        --><?php //}
+//
+//                        //                        Если Подтвержден Бағлан
+//                        elseif($row['client_confirm'] == 'Бағлан' && $row['client_status'] == '2.Подтвержден') { ?>
+<!--                            <option value="Бағлан">Бағлан</option>-->
+<!--                        --><?php //}
+//                        elseif($row['client_confirm'] == 'Бағлан' && $row['client_status'] == '4,1.Ожидает доставки') { ?>
+<!--                            <option value="Бағлан">Бағлан</option>-->
+<!--                        --><?php //}
+//
+////                        Если Отказ Асылжан
+//                        elseif($row['client_confirm'] == 'Асылжан' && $row['client_status'] == '7.Отказ') { ?>
+<!--                            <option value="Асылжан">Асылжан</option>-->
+<!--                        --><?php //}
+////                        Если Отказ Акбота
+//                        elseif($row['client_confirm'] == 'Акбота' && $row['client_status'] == '7.Отказ') { ?>
+<!--                            <option value="Акбота">Акбота</option>-->
+<!--                        --><?php //}
+////                        Если Отказ Бағлан
+//                        elseif($row['client_confirm'] == 'Бағлан' && $row['client_status'] == '7.Отказ') { ?>
+<!--                            <option value="Бағлан">Бағлан</option>-->
+<!--                        --><?php //}
+//
+////                        1.В Оброботке
+//                        elseif($row['client_confirm'] == 'Асылжан') { ?>
+<!--                            <option value="Асылжан">Асылжан</option>-->
+<!--                            <option value="Акбота">Акбота</option>-->
+<!--                            <option value="Бағлан">Бағлан</option>-->
+<!--                        --><?php //}
+//                        elseif($row['client_confirm'] == 'Бағлан') { ?>
+<!--                            <option value="Бағлан">Бағлан</option>-->
+<!--                            <option value="Акбота">Акбота</option>-->
+<!--                            <option value="Асылжан">Асылжан</option>-->
+<!--                        --><?php //}
+//                        elseif($row['client_confirm'] == 'Акбота') { ?>
+<!--                            <option value="Акбота">Акбота</option>-->
+<!--                            <option value="Бағлан">Бағлан</option>-->
+<!--                            <option value="Асылжан">Асылжан</option>-->
+<!--                        --><?php //}
+//
+//                        else { ?>
+<!--                            <option value=""></option>-->
+<!--                            <option value="Бағлан">Бағлан</option>-->
+<!--                            <option value="Акбота">Акбота</option>-->
+<!--                            <option value="Асылжан">Асылжан</option>-->
+<!--                        --><?php //}
+//                        ?>
                     </select>
                      <span> Предоплата:</span>
                         <input type=" text" class="form-control" name="client_oplata"
