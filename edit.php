@@ -43,7 +43,7 @@ while ($row = mysqli_fetch_assoc($query)) :
                         unset($_SESSION['search']);
                         echo '<a href="logist.php" class="btn btn-light mt-2 mb-3">Назад!</a>';
                     }else{
-                        echo '<a href="#" onclick="history.go(-1); return false;" class="btn btn-light mt-2 mb-3">Назад</a>';
+                        echo '<a href="#" onclick="history.go(-2); return false;" class="btn btn-light mt-2 mb-3">Назад</a>';
                     }
                 ?>
                 <form action="" method="POST">
@@ -158,6 +158,7 @@ while ($row = mysqli_fetch_assoc($query)) :
                             <option value="3.Перезвон">Перезвон</option>
                             <option value="2.Подтвержден">Подтвержден</option>
                             <option value="4.Ожидает">Ожидает</option>
+                            <option value="2,1.Алматы">Алматы</option>
                             <option value="4,1.Ожидает доставки">Ожидает доставки</option>
                             <option value="4,2.Заберут">Заберут</option>
                             <option value="5.В Пути">В Пути</option>
@@ -169,6 +170,7 @@ while ($row = mysqli_fetch_assoc($query)) :
                             <option value="4.Ожидает">Ожидает</option>
                             <option value="2.Подтвержден">Подтвержден</option>
                             <option value="3.Перезвон">Перезвон</option>
+                            <option value="2,1.Алматы">Алматы</option>
                             <option value="4,1.Ожидает доставки">Ожидает доставки</option>
                             <option value="4,2.Заберут">Заберут</option>
                             <option value="6.Вручено">Вручено</option>
