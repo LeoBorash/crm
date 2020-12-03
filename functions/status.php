@@ -158,7 +158,7 @@ function ozhidDostavki()
                 <div class="text-primary mb-2 statusi">
                     <span><?= substr($row['client_date'], 5,-3) ?> </span><br>
                     <a href="edit.php?id=<?= $row['client_id'] ?>"><?= mb_substr($row['client_name'], 0, 23) ?></a> <br>
-                    <span><?= $row['client_phone'] ?></span><br>
+                    <span><?= $row['client_track'] ?></span><br>
                     <span><?= $row['client_product'] ?> | <?= $row['client_price'] ?>тг</span>
                 </div>
             <?php }
@@ -171,7 +171,7 @@ function ozhidDostavki()
                 <div class="text-primary mb-2 statusi">
                     <span><?= substr($row['client_date'], 5,-3) ?> </span><br>
                     <a href="edit.php?id=<?= $row['client_id'] ?>"><?= mb_substr($row['client_name'], 0, 23) ?></a> <br>
-                    <span><?= $row['client_phone'] ?></span><br>
+                    <span><?= $row['client_track'] ?></span><br>
                     <span><?= $row['client_product'] ?> | <?= $row['client_price'] ?>тг</span>
                 </div>
             <?php }
