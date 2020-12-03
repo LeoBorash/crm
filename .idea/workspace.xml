@@ -11,7 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f4e2695-b5c2-4fdd-bdbe-79d7c4825c2c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/functions/status.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/status.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +72,7 @@
       <workItem from="1606893907301" duration="2030000" />
       <workItem from="1606903356961" duration="7221000" />
       <workItem from="1606915741666" duration="1863000" />
-      <workItem from="1606983834836" duration="10609000" />
+      <workItem from="1606983834836" duration="11043000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1606388260275</created>
@@ -200,7 +200,35 @@
       <option name="project" value="LOCAL" />
       <updated>1607003095382</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Принял Бага, edit.php">
+      <created>1607003461440</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1607003461440</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Принял Бага, edit.php">
+      <created>1607003570187</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1607003570187</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Принял Бага, edit.php">
+      <created>1607003624515</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1607003624515</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Count Бага, logist_sts_count.php">
+      <created>1607003725156</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1607003725156</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,17 +257,19 @@
     <MESSAGE value="Profile Balance" />
     <MESSAGE value="Track Nomer Status ozhidaet" />
     <MESSAGE value="Принял Асылжан, edit.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="Принял Асылжан, edit.php" />
+    <MESSAGE value="Принял Бага, edit.php" />
+    <MESSAGE value="Count Бага, logist_sts_count.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Count Бага, logist_sts_count.php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604744594230">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604744594230" />
-    <state x="371" y="0" width="745" height="824" key="CommitChangelistDialog2" timestamp="1607003093760">
+    <state x="477" y="0" width="745" height="824" key="CommitChangelistDialog2" timestamp="1607003723581">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="371" y="0" width="745" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1607003093760" />
+    <state x="477" y="0" width="745" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1607003723581" />
     <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1606548421684">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -272,10 +302,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606383158529" />
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1607003099715">
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1607003729190">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607003099715" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607003729190" />
     <state x="479" y="129" width="577" height="566" key="find.popup" timestamp="1605524416525">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

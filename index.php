@@ -47,7 +47,7 @@ if (isset($_POST['exit'])) {
             <!--            <input type="date" class="form-control mr-sm-2 mt-1" name="todate">-->
             <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" name="searchbtn">Поиск</button>
             <?php
-            if($_SESSION['user_status'] == 2){ ?>
+            if($_SESSION['user_name'] == 'Асылжан'){ ?>
                 <a href="profile.php" class="btn btn-outline-primary mr-2 ml-2" name="exit"><?php balance();?></a>
                 <br><br><br>
             <?php }
