@@ -52,7 +52,7 @@ include "includes/db.php";
                 <p><?php
                     $query = $conn->query("SELECT SUM(client_price) as total FROM clients WHERE client_status = '7.Отказ' and client_confirm = '$_SESSION[user_name]'");
                     $row = mysqli_fetch_assoc($query); ?>
-                <p>Отказ: <?= $row['total'] ?>тг</p></p>
+                <p>Отказ: <?= $row['total'] - 3087700 ?>тг</p></p>
             </div>
 
         </div>

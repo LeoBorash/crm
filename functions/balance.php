@@ -35,9 +35,9 @@ function balance()
 
     echo '
     <span style="color: white";>
-        <i style="color:gold" class="fas fa-coins"></i>  : ' . (int)($a * (8 / 100)) . 'тг' . ' 
-        <i style="color:lightblue" class="ml-1 fas fa-money-check-alt"></i> : ' . (int)(($_SESSION['f'] + $_SESSION['g'] - 1154060) * (8 / 100)) . 'тг' . '
-        <i style="color:orangered" class="ml-2 fas fa-times"></i> : ' . $_SESSION['e'] * (8 / 100) . 'тг' . '
+        <i style="color:gold" class="fas fa-coins"></i>  : ' . (int)(($a - 300000) * (8 / 100)) . 'тг' . ' 
+        <i style="color:lightblue" class="ml-1 fas fa-money-check-alt"></i> : ' . (int)(($_SESSION['f'] + $_SESSION['g'] - 1339940) * (8 / 100)) . 'тг' . '
+        <i style="color:orangered" class="ml-2 fas fa-times"></i> : ' . ($_SESSION['e'] - 3087700) * (8 / 100) . 'тг' . '
      </span>
        ';
 }
