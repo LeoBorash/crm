@@ -42,8 +42,12 @@ while ($row = mysqli_fetch_assoc($query)) :
                     if(isset($_SESSION['search'])){
                         unset($_SESSION['search']);
                         echo '<a href="logist.php" class="btn btn-light mt-2 mb-3">Назад!</a>';
-                    }else{
-                        echo '<a href="#" onclick="history.go(-2); return false;" class="btn btn-light mt-2 mb-3">Назад</a>';
+                    }elseif (isset($_SESSION['manager'])){
+                        unset($_SESSION['manager']);
+                        echo '<a href="/" class="btn btn-light mt-2 mb-3">Назад!</a>';
+                    }elseif (isset($_SESSION['logist'])){
+                        unset($_SESSION['logist']);
+                        echo '<a href="logist.php" class="btn btn-light mt-2 mb-3">Назад!</a>';
                     }
                 ?>
                 <form action="" method="POST">

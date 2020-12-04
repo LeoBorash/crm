@@ -1,8 +1,8 @@
 <?php
 function obrobotke()
 {
+    $_SESSION['manager'] = 1;
     global $conn;
-
     $query = $conn->query("SELECT * FROM clients WHERE client_status = '1.В Оброботке' ORDER BY client_date DESC");
     while ($row = mysqli_fetch_assoc($query)) {
         $_SESSION['tel'] = $row['client_phone'];
@@ -30,6 +30,7 @@ function obrobotke()
 
 function perezvon()
 {
+    $_SESSION['manager'] = 1;
     global $conn;
     $query = $conn->query("SELECT * FROM clients WHERE client_status = '3.Перезвон'");
     while ($row = mysqli_fetch_assoc($query)) { ?>
@@ -45,6 +46,7 @@ function perezvon()
 
 function ozhidaet()
 {
+    $_SESSION['manager'] = 1;
     global $conn;
     if ($_SESSION['user_login'] == 'asiok') {
         $query = $conn->query("SELECT * FROM clients WHERE client_status = '4.Ожидает'");
@@ -90,6 +92,7 @@ function ozhidaet()
 
 function zaberut()
 {
+    $_SESSION['manager'] = 1;
     global $conn;
     $query = $conn->query("SELECT * FROM clients WHERE client_status = '4,2.Заберут'");
     while ($row = mysqli_fetch_assoc($query)) { ?>
@@ -149,6 +152,7 @@ function podtver()
 
 function ozhidDostavki()
 {
+    $_SESSION['logist'] = 1;
     global $conn;
     if ($_SESSION['user_login'] == 'asiok') {
         $query = $conn->query("SELECT * FROM clients WHERE client_status = '4,1.Ожидает доставки'");
@@ -193,6 +197,7 @@ function ozhidDostavki()
 
 function almaty()
 {
+    $_SESSION['logist'] = 1;
     global $conn;
     if ($_SESSION['user_login'] == 'asiok') {
         $query = $conn->query("SELECT * FROM clients WHERE client_status = '2,1.Алматы'");
@@ -238,6 +243,7 @@ function almaty()
 
 function vputi()
 {
+    $_SESSION['logist'] = 1;
     global $conn;
     if ($_SESSION['user_login'] == 'asiok') {
         $query = $conn->query("SELECT * FROM clients WHERE client_status = '5.В Пути'");
@@ -279,6 +285,7 @@ function vputi()
 
 function postupil()
 {
+    $_SESSION['logist'] = 1;
     global $conn;
     if ($_SESSION['user_login'] == 'asiok') {
         $query = $conn->query("SELECT * FROM clients WHERE client_status = '4,3.Поступил'");
@@ -320,6 +327,7 @@ function postupil()
 }
 function vrucheno()
 {
+    $_SESSION['logist'] = 1;
     global $conn;
     if ($_SESSION['user_login'] == 'asiok') {
         $query = $conn->query("SELECT * FROM clients WHERE client_status = '6.Вручено'");
@@ -362,6 +370,7 @@ function vrucheno()
 
 function vruchenoAlmaty()
 {
+    $_SESSION['logist'] = 1;
     global $conn;
     if ($_SESSION['user_login'] == 'asiok') {
         $query = $conn->query("SELECT * FROM clients WHERE client_status = '2,2.Вручено АЛ'");
@@ -405,6 +414,7 @@ function vruchenoAlmaty()
 
 function otkaz()
 {
+    $_SESSION['logist'] = 1;
     global $conn;
     if ($_SESSION['user_login'] == 'asiok') {
         $query = $conn->query("SELECT * FROM clients WHERE client_status = '8.Отказ')");
