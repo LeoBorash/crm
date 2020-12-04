@@ -48,6 +48,8 @@ while ($row = mysqli_fetch_assoc($query)) :
                     }elseif (isset($_SESSION['logist'])){
                         unset($_SESSION['logist']);
                         echo '<a href="logist.php" class="btn btn-light mt-2 mb-3">Назад!</a>';
+                    }else{
+                        echo '<a href="#" onclick="location.href = document.referrer; return false;" class="btn btn-light mt-2 mb-3">Назад!</a>';
                     }
                 ?>
                 <form action="" method="POST">
