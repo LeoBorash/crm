@@ -19,7 +19,7 @@ function logist_search_sts_count()
             <?php
             $query = $conn->query("SELECT count(client_price) as total8 FROM clients WHERE client_status = '5.В Пути' AND client_confirm = 'Асылжан'");
             $row = mysqli_fetch_assoc($query); ?>
-            <th class="text-center main-status">В Пути (<?= $row['total8'] ?>)</th>
+            <th class="text-center main-status">Казпочта (<?= $row['total8'] ?>)</th>
             <?php
             $query = $conn->query("SELECT count(client_price) as total9 FROM clients WHERE client_status = '4,3.Поступил' AND client_confirm = 'Асылжан'");
             $row = mysqli_fetch_assoc($query); ?>
@@ -52,7 +52,7 @@ function logist_search_sts_count()
             <?php
             $query = $conn->query("SELECT count(client_price) as total8 FROM clients WHERE client_status = '5.В Пути'");
             $row = mysqli_fetch_assoc($query); ?>
-            <th class="text-center main-status">В Пути (<?= $row['total8'] ?>)</th>
+            <th class="text-center main-status">Казпочта (<?= $row['total8'] ?>)</th>
             <?php
             $query = $conn->query("SELECT count(client_price) as total8 FROM clients WHERE client_status = '5,1.СДЭК'");
             $row = mysqli_fetch_assoc($query); ?>
@@ -76,17 +76,6 @@ function logist_search_sts_count()
         <?php  }
 
     }
-
-    elseif ($_SESSION['user_status']==3){ ?>
-        <?php
-        $query = $conn->query("SELECT count(client_price) as total3 FROM clients WHERE client_status = '2,1.Алматы'");
-        $row = mysqli_fetch_assoc($query); ?>
-        <th class="text-center main-status">Алматы (<?= $row['total3'] ?>)</th>
-        <?php
-        $query = $conn->query("SELECT count(client_price) as total10 FROM clients WHERE client_status = '2,2.Вручено Ал'");
-        $row = mysqli_fetch_assoc($query); ?>
-        <th class="text-center main-status">Вручено Ал(<?= $row['total10'] ?>)</th>
-    <?php }
     ?>
 
     <?php

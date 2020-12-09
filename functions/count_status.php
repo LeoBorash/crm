@@ -40,7 +40,7 @@ function count_status() {
                     <?php
                     $query = $conn->query("SELECT SUM(client_price) as totalc FROM clients WHERE client_status = '5.В Пути'");
                     $row = mysqli_fetch_assoc($query); ?>
-                    <p>В Пути: <?=$row['totalc']?></p>
+                    <p>Казпочта: <?=$row['totalc']?></p>
                     <?php
                     $query = $conn->query("SELECT SUM(client_price) as totalc FROM clients WHERE client_status = '5,1.СДЭК'");
                     $row = mysqli_fetch_assoc($query); ?>
