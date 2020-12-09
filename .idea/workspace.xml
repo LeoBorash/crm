@@ -11,13 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f4e2695-b5c2-4fdd-bdbe-79d7c4825c2c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/count/logist_sts_count.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/count/logist_sts_count.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/status.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/status.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logist.php" beforeDir="false" afterPath="$PROJECT_DIR$/logist.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +81,7 @@
       <workItem from="1607149955963" duration="995000" />
       <workItem from="1607422297603" duration="237000" />
       <workItem from="1607427597473" duration="1600000" />
-      <workItem from="1607511634643" duration="1110000" />
+      <workItem from="1607511634643" duration="1426000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1606388260275</created>
@@ -264,7 +258,28 @@
       <option name="project" value="LOCAL" />
       <updated>1607073193306</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="СДЭК Статус добавление">
+      <created>1607512871948</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1607512871948</updated>
+    </task>
+    <task id="LOCAL-00027" summary="СДЭК Статус добавление">
+      <created>1607512905880</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1607512905880</updated>
+    </task>
+    <task id="LOCAL-00028" summary="СДЭК Статус добавление">
+      <created>1607512991768</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1607512991768</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +311,8 @@
     <MESSAGE value="Принял Бага, edit.php" />
     <MESSAGE value="Count Бага, logist_sts_count.php" />
     <MESSAGE value="Кнопка Назад, edit.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="Кнопка Назад, edit.php" />
+    <MESSAGE value="СДЭК Статус добавление" />
+    <option name="LAST_COMMIT_MESSAGE" value="СДЭК Статус добавление" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604744594230">

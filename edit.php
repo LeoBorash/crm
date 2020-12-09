@@ -194,6 +194,7 @@ while ($row = mysqli_fetch_assoc($query)) :
                         elseif ($row['client_status'] == '4,1.Ожидает доставки') { ?>
                             <option value="4,1.Ожидает доставки">Ожидает доставки</option>
                             <option value="5.В Пути">В Пути</option>
+                            <option value="5,1.СДЭК">СДЭК</option>
                             <option value="4,3.Поступил">Поступил</option>
                             <option value="6.Вручено">Вручено</option>
                             <option value="8.Отказ">Отказ!</option>
