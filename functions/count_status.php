@@ -42,6 +42,10 @@ function count_status() {
                     $row = mysqli_fetch_assoc($query); ?>
                     <p>В Пути: <?=$row['totalc']?></p>
                     <?php
+                    $query = $conn->query("SELECT SUM(client_price) as totalc FROM clients WHERE client_status = '5,1.СДЭК'");
+                    $row = mysqli_fetch_assoc($query); ?>
+                    <p>СДЭК: <?=$row['totalc']?></p>
+                    <?php
                     $query = $conn->query("SELECT SUM(client_price) as total FROM clients WHERE client_status = '4,3.Поступил'");
                     $row = mysqli_fetch_assoc($query); ?>
                     <p>Поступил: <?=$row['total']?></p>
@@ -63,36 +67,6 @@ function count_status() {
 
             </div>
         </div>
-    <?php }
-    elseif($_SESSION['user_status']==3){ ?>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <?php
-                    $query = $conn->query("SELECT count(client_price) as total FROM clients WHERE client_status = '2,1.Алматы'");
-                    $row = mysqli_fetch_assoc($query); ?>
-                    <p>Алматы: <?=$row['total']?></p>
-                    <?php
-                    $query = $conn->query("SELECT count(client_price) as total FROM clients WHERE client_status = '6.Вручено'");
-                    $row = mysqli_fetch_assoc($query); ?>
-                    <p>Вручено: <?=$row['total']?></p>
-                </div>
-
-                <div class="col-md-3">
-                    <?php
-                    $query = $conn->query("SELECT SUM(client_price) as total FROM clients WHERE client_status = '2,1.Алматы'");
-                    $row = mysqli_fetch_assoc($query); ?>
-                    <p>Алматы: <?=$row['total']?></p>
-                    <?php
-                    $query = $conn->query("SELECT SUM(client_price) as totalc FROM clients WHERE client_status = '6.Вручено'");
-                    $row = mysqli_fetch_assoc($query); ?>
-                    <p>Вручено: <?=$row['totalc']?></p>
-                </div>
-
-            </div>
-        </div>
-    <?php }
-    elseif ($_SESSION['user_status']==2) { ?>
     <?php }
     $_SESSION['a'] = $row['total1'];
 }
