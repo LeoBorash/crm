@@ -72,6 +72,9 @@ while ($row = mysqli_fetch_assoc($query)) :
                             <!-- V8 Gifts -->
                         <?php } elseif ($row['client_product'] == 'V8-Gifts') { ?>
                             <option value="V8-Gifts">V8-Gifts</option>
+                            <!-- A1 gifts -->
+                        <?php } elseif ($row['client_product'] == 'A1-Gifts') { ?>
+                            <option value="A1-Gifts">A1-Gifts</option>
                             <!-- Клатч -->
                         <?php } elseif ($row['client_product'] == 'Клатч') { ?>
                             <option value="Клатч">Клатч</option>
