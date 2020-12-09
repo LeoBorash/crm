@@ -48,6 +48,10 @@ include "includes/db.php";
                     $query = $conn->query("SELECT SUM(client_price) as total FROM clients WHERE client_status = '6.Вручено' and client_confirm = '$_SESSION[user_name]'");
                     $row = mysqli_fetch_assoc($query); ?>
                 <p>Вручено: <?= $row['total']  - 1339940 ?>тг</p></p>
+                <p><?php
+                    $query = $conn->query("SELECT SUM(client_price) as total FROM clients WHERE client_status = '2,2.Вручено АЛ' and client_confirm = '$_SESSION[user_name]'");
+                    $row = mysqli_fetch_assoc($query); ?>
+                <p>Вручено алматы: <?= $row['total']  - 230000 ?>тг</p></p>
 
                 <p><?php
                     $query = $conn->query("SELECT SUM(client_price) as total FROM clients WHERE client_status = '7.Отказ' and client_confirm = '$_SESSION[user_name]'");
