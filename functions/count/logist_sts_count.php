@@ -22,6 +22,10 @@ function logist_sts_count()
             $row = mysqli_fetch_assoc($query); ?>
             <th class="text-center main-status">В Пути (<?= $row['total8'] ?>)</th>
             <?php
+            $query = $conn->query("SELECT count(client_price) as total8 FROM clients WHERE client_status = '5,1.СДЭК' AND client_confirm = 'Бағла'");
+            $row = mysqli_fetch_assoc($query); ?>
+            <th class="text-center main-status">СДЭК (<?= $row['total8'] ?>)</th>
+            <?php
             $query = $conn->query("SELECT count(client_price) as total9 FROM clients WHERE client_status = '4,3.Поступил' AND client_confirm = 'Бағла'");
             $row = mysqli_fetch_assoc($query); ?>
             <th class="text-center main-status">Поступил (<?= $row['total9'] ?>)</th>
@@ -49,6 +53,10 @@ function logist_sts_count()
             $row = mysqli_fetch_assoc($query); ?>
             <th class="text-center main-status">В Пути (<?= $row['total8'] ?>)</th>
             <?php
+            $query = $conn->query("SELECT count(client_price) as total8 FROM clients WHERE client_status = '5,1.СДЭК' AND client_confirm = 'Асылжан'");
+            $row = mysqli_fetch_assoc($query); ?>
+            <th class="text-center main-status">СДЭК (<?= $row['total8'] ?>)</th>
+            <?php
             $query = $conn->query("SELECT count(client_price) as total9 FROM clients WHERE client_status = '4,3.Поступил' AND client_confirm = 'Асылжан'");
             $row = mysqli_fetch_assoc($query); ?>
             <th class="text-center main-status">Поступил (<?= $row['total9'] ?>)</th>
@@ -72,6 +80,10 @@ function logist_sts_count()
             $query = $conn->query("SELECT count(client_price) as total8 FROM clients WHERE client_status = '5.В Пути'");
             $row = mysqli_fetch_assoc($query); ?>
             <th class="text-center main-status">В Пути (<?= $row['total8'] ?>)</th>
+            <?php
+            $query = $conn->query("SELECT count(client_price) as total8 FROM clients WHERE client_status = '5,1.СДЭК'");
+            $row = mysqli_fetch_assoc($query); ?>
+            <th class="text-center main-status">СДЭК (<?= $row['total8'] ?>)</th>
             <?php
             $query = $conn->query("SELECT count(client_price) as total9 FROM clients WHERE client_status = '4,3.Поступил'");
             $row = mysqli_fetch_assoc($query); ?>

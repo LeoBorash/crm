@@ -118,7 +118,15 @@ while ($row = mysqli_fetch_assoc($query)) :
 //                        5.В Пути
                         if ($row['client_status'] == '5.В Пути') { ?>
                             <option value="5.В Пути">В Пути</option>
+                            <option value="5,1.СДЭК">СДЭК</option>
+
                             <option value="4,3.Поступил">Поступил</option>
+                            <option value="8.Отказ">Отказ!</option>
+                            <option value="6.Вручено">Вручено</option>
+                        <?php }
+//                        5,1. СДЭК
+                        if ($row['client_status'] == '5,1.СДЭК') { ?>
+                            <option value="5,1.СДЭК">СДЭК</option>
                             <option value="8.Отказ">Отказ!</option>
                             <option value="6.Вручено">Вручено</option>
                         <?php }

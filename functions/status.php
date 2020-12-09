@@ -22,10 +22,6 @@ function obrobotke()
         </div>
     <?php }
 
-
-
-
-
 }
 
 function perezvon()
@@ -200,10 +196,9 @@ function almaty()
     $_SESSION['logist'] = 1;
     global $conn;
     if ($_SESSION['user_login'] == 'asiok') {
-        $query = $conn->query("SELECT * FROM clients WHERE client_status = '2,1.Алматы'");
+        $query = $conn->query("SELECT * FROM clients  WHERE client_status = '2,1.Алматы'");
         while ($row = mysqli_fetch_assoc($query)) { ?>
             <?php if ($row['client_confirm'] == 'Асылжан') { ?>
-
                 <div class="text-primary mb-2 statusi">
                     <span><?= substr($row['client_date'], 5,-3) ?> </span><br>
                     <a href="edit.php?id=<?= $row['client_id'] ?>"><?= mb_substr($row['client_name'], 0, 23) ?></a> <br>
@@ -271,6 +266,36 @@ function vputi()
         }
     }else{
         $query = $conn->query("SELECT * FROM clients WHERE client_status = '5.В Пути'");
+        while ($row = mysqli_fetch_assoc($query)) { ?>
+
+            <div class="text-primary mb-2 statusi">
+                <span><?= substr($row['client_date'], 5,-3) ?> </span><br>
+                <a href="edit.php?id=<?= $row['client_id'] ?>"><?= mb_substr($row['client_name'], 0, 23) ?></a> <br>
+                <span><?= $row['client_track'] ?></span><br>
+            </div>
+            <?php
+        }
+    }
+}
+
+function cdek()
+{
+    $_SESSION['logist'] = 1;
+    global $conn;
+    if ($_SESSION['user_login'] == 'asiok') {
+        $query = $conn->query("SELECT * FROM clients WHERE client_status = '5,1.СДЭК'");
+        while ($row = mysqli_fetch_assoc($query)) { ?>
+            <?php if ($row['client_confirm'] == 'Асылжан') { ?>
+
+                <div class="text-primary mb-2 statusi">
+                    <span><?= substr($row['client_date'], 5,-3) ?> </span><br>
+                    <a href="edit.php?id=<?= $row['client_id'] ?>"><?= mb_substr($row['client_name'], 0, 23) ?></a> <br>
+                    <span><?= $row['client_track'] ?></span><br>
+                </div>
+            <?php }
+        }
+    }else{
+        $query = $conn->query("SELECT * FROM clients WHERE client_status = '5,1.СДЭК'");
         while ($row = mysqli_fetch_assoc($query)) { ?>
 
             <div class="text-primary mb-2 statusi">

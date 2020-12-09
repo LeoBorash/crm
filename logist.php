@@ -81,6 +81,7 @@ if (isset($_POST['exit'])) {
                             <td><?php Searchpodtver(); ?></td>
                             <td><?php SearchozhidDostavki(); ?></td>
                             <td><?php Searchvputi(); ?></td>
+                            <td><?php Searchcdek(); ?></td>
                             <td><?php Searchpostupil(); ?></td>
                             <td><?php Searchvrucheno(); ?></td>
                             <td><?php SearchvruchenoAlmaty(); ?></td>
@@ -91,6 +92,7 @@ if (isset($_POST['exit'])) {
                             <td><?php podtver(); ?></td>
                             <td><?php ozhidDostavki(); ?></td>
                             <td><?php vputi(); ?></td>
+                            <td><?php cdek(); ?></td>
                             <td><?php postupil(); ?></td>
                             <td><?php otkaz(); ?></td>
                         <?php }

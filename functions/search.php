@@ -222,6 +222,35 @@ function Searchvputi()
     <?php }
 }
 
+function Searchcdek()
+{
+    $_SESSION['search'] = 1;
+    global $conn;
+    $query = $conn->query("
+    SELECT * FROM clients 
+    WHERE 
+    client_name LIKE '%$_POST[search]%' || 
+    client_phone LIKE '%$_POST[search]%' || 
+    client_product LIKE '%$_POST[search]%' || 
+    client_track LIKE '%$_POST[search]%' ||
+    client_confirm LIKE '%$_POST[search]%' || 
+    client_date LIKE '%$_POST[search]%' || 
+    client_city LIKE '%$_POST[search]%'
+    ORDER BY client_date DESC");
+    while ($row = mysqli_fetch_assoc($query)) { ?>
+        <?php
+        if($row['client_status'] == '5,1.СДЭК') { ?>
+            <div class="text-primary mb-2 statusi">
+                <a href="edit.php?id=<?= $row['client_id'] ?>"><?= mb_substr($row['client_name'], 0, 23) ?></a> <br>
+                <span><?= $row['client_phone'] ?></span><br>
+                <span><?= $row['client_product'] ?> | <?= $row['client_price'] ?>тг</span>
+            </div>
+        <?php }
+        ?>
+    <?php }
+}
+
+
 function Searchpostupil()
 {
     $_SESSION['search'] = 1;
